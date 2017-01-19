@@ -7,9 +7,7 @@ class Vegetable extends Product{
 	private $harvestedAt;
 
 public function __construct($bId,$nom,$prix,$producteur,$recolte){
-		parent::setId($bId);
-		parent::setName($nom);
-		parent::setPrice($prix);
+		parent::__construct($bId,$nom,$prix);
 		$this->setProductorName($producteur);
 		$this->setHarvestedAt($recolte);
 

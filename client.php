@@ -1,6 +1,6 @@
 <?php 
 
-require'user.php';
+require_once'user.php';
 class Client extends User{
 
 
@@ -10,6 +10,6 @@ class Client extends User{
 		parent::setCreatedAt($date);
 
 	}
-	// public function buy();
+	public function buy();
 };
 
